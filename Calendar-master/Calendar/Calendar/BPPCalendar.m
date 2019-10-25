@@ -299,6 +299,7 @@
 //    BPPCalendarCell *cell = (BPPCalendarCell *)[collectionView cellForItemAtIndexPath:indexPath];
 //    cell.contentView.backgroundColor = [UIColor lightGrayColor];
     [self.mutDict removeAllObjects];
+    //给这个cell进行标注 后面显示就是点击状态
     [self.mutDict setValue:@"value" forKey:[NSString stringWithFormat:@"%ld",indexPath.row]];
     [self.calendarCollectView reloadData];
     
